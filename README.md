@@ -12,7 +12,7 @@ animals
 ## syllabus 
 | 주차  |강의범위 및 내용              | 필기 파일  |
 |----- |--------------------------|---------|
-|제 1주 |Intro. What is git?       |https://replit.com/@dlgPdnjs041020/OSS#w1.txt|
+|제 1주 |Intro. What is git?       ||
 |제 2주 |	Markup Language, 깃 시작하기|https://replit.com/@hyewon4782/OSS#%ED%95%84%EA%B8%B0/w2.txt|
 |제 3주 |버전관리                     |https://replit.com/@hyewon4782/OSS#%ED%95%84%EA%B8%B0/w3.txt|
 |제 4주 |브랜치                       |https://replit.com/@hyewon4782/OSS#%ED%95%84%EA%B8%B0/w4.txt|
