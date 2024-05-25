@@ -6,23 +6,23 @@
 ![이미지](https://img.freepik.com/premium-vector/cute-duck-cartoon-vector-illustration-little-yellow-rubber-duck-icon_101266-14846.jpg?w=1060)
 
 ## 폴더에 대한 설명
-Hello
-:
+animals
+: 파일과 텍스트파일을 cd 할때 옮겨지는 요소를 보기 위해 만들었습니다. 
 
-syllabus 
+## syllabus 
 | 주차  |강의범위 및 내용              | 필기 파일  |
 |----- |--------------------------|---------|
-|제 1주 |Intro. What is git?       |https://replit.com/@dlwldn041020/OSS#w1.txt|
-|제 2주 |	Markup Language, 깃 시작하기|https://replit.com/@dlwldn041020/OSS#w2.txt|
-|제 3주 |버전관리                     |https://replit.com/@dlwldn041020/OSS#w3.txt|
-|제 4주 |브랜치                       |https://replit.com/@dlwldn041020/OSS#w4.txt|
-|제 5주 |깃허브                       |https://replit.com/@dlwldn041020/OSS#Week5.txt|
-|제 6주 |깃허브로 협업하기               |https://replit.com/@dlwldn041020/OSS#week6.txt|
-|제 7주 |셸 스크립트 기초 문법            |https://replit.com/@dlwldn041020/OSS#week7.txt|
+|제 1주 |Intro. What is git?       |https://replit.com/@dlgPdnjs041020/OSS#w1.txt|
+|제 2주 |	Markup Language, 깃 시작하기|https://replit.com/@dlgPdnjs041020/OSS#w2.txt|
+|제 3주 |버전관리                     |https://replit.com/@dlgPdnjs041020/OSS#w3.txt|
+|제 4주 |브랜치                       |https://replit.com/@dlgPdnjs041020/OSS#w4.txt|
+|제 5주 |깃허브                       |https://replit.com/@dlgPdnjs041020/OSS#Week5.txt|
+|제 6주 |깃허브로 협업하기               |https://replit.com/@dlgPdnjs041020/OSS#week6.txt|
+|제 7주 |셸 스크립트 기초 문법            |https://replit.com/@dlgPdnjs041020/OSS#week7.txt|
 |제 8주 |중간고사                      |
-|제 9주 |grep 사용법                   |https://replit.com/@dlwldn041020/OSS#w9.txt|
+|제 9주 |grep 사용법                   |https://replit.com/@dlgPdnjs041020/OSS#w9.txt|
 |제 10주|find 사용법                   |
-|제 11주|awk 사용법                    |https://replit.com/@dlwldn041020/OSS#w11.txt|
+|제 11주|awk 사용법                    |https://replit.com/@dlgPdnjs041020/OSS#w11.txt|
 |제 12주|sed 사용법                    |
 |제 13주|date 사용법                   |
 |제 14주|프로젝트                       |
