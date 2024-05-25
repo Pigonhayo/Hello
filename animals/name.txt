@@ -1,0 +1,3 @@
+smith 33 Seoul
+julia 22 Busan
+kim 20 Incheon
