@@ -1,5 +1,5 @@
 month=$1
-day=$2
+date=$2
 year=$3
 
 if [ ! $# = 3 ]
