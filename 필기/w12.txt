@@ -4,7 +4,7 @@
 
 git status
 git add filet.txt
-git commit -m "commit 1"
+git commit -m "commit 1" (따옴표 안에 아무거나 작성)
 
 ## 상태 짧게 확인하기
 git status -s
@@ -21,7 +21,7 @@ git status -s
     - D : deleted
     - R : renamed
     - MM :
-    - AM:
+    - AM : x y가 다른 경우
     - !! : ignored 
       --ignored : 깃에 보이지 않는 파일의 상태까지 나타냄
       ex) git status -s --ignored
@@ -29,7 +29,7 @@ git status -s
     ** 모든 것이 commit이 되었을 때는 아무것도 안 나타나는 empty상태여야 clean하다**
 
 파일 1개 생성 -> 스테이징 -> 수정 -> 커밋 -> 
-파일 옮기기 (D -> R) 
+파일 옮기기 -> 스테이징 (D -> R) 
 (두 파일이 동일한 상태임을 앎)
 파일 삭제하기 (D)
 
@@ -40,6 +40,7 @@ git status -s
 (필요 없는 파일을 gitignore에 저장)
 (파일명: .gitignore)
 **해당 파일에 관리하고 싶은 파일의 이름이 아닌, 패턴을 넣어야함**
+
 - 이 파일은 최상위 디렉터리에 두고, 파일 내부에 관리할 파일의 패턴을 명시한다.
 - 예시 : 로그파일, 대용량 파일, 데이터, 등등 버전 관리가 필요없는 파일들
 - 패턴 : glob 패턴 사용
@@ -66,7 +67,9 @@ git status -s
 
 ### 문제 : 무시할 파일 패턴으로 명시하기 (.gitignore)
 1. 확장자가  .a인 파일                                     -> *.a
-2. 1번 + lib.a는 제외                                     *.a                                                   !lib.a
+2. 1번 + lib.a는 제외                                    
+*.a                                                   
+!lib.a
 3. 현재 디렉토리에 있는 TODO 파일은 적용하되, subdir/TODO등 하위 티렉토리 파일은 적용하지 않도록                        /TODO, !subdir/TODO
 4. bulid 디렉토리에 있는 모든 파일 적용                       -> build/
 5. doc/notes.txt 파일은 적용하고, doc/server/arch.txt 파일은 적용하지 않기                                          -> doc/notes.txt , !doc/sever/arch.txt
