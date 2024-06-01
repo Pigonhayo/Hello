@@ -69,7 +69,7 @@ if [ "$date" -le 0 ] || [ "$date" -gt "$days_in_month" ]; then
     exit 0
   else
     echo "옳지 않은 날짜이므로 $month $date $year는 유효하지 않습니다."
-    exit 1
+    exit 0
   fi  
 fi
 
