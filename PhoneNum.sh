@@ -16,27 +16,17 @@ found=false
 tempfile=$(mktemp)
 
 if [ -f "$PHONEBOOK" ]; then
-    while read -r entry_name entry_number entry_area; do
+    while read -r line; do
+        entry_name=$(echo "$line" | cut -d' ' -f1)
+        entry_number=$(echo "$line" | cut -d' ' -f2)
+        entry_area=$(echo "$line" | cut -d' ' -f3)
         case $entry_area in
-            서울)
-                code_number="02"
-                ;;
-            부산)
-                code_number="051"
-                ;;
-            대구)
-                code_number="053"
-                ;;
-            인천)
-                code_number="032"
-                ;;
-            광주)
-                code_number="062"
-                ;;
-            *)
-                echo "Unknown area code: $entry_area"
-                exit 1
-                ;;
+            "02") region="서울" ;;
+            "051") region="부산" ;;
+            "053") region="대구" ;;
+            "032") region="인천" ;;
+            "062") region="광주" ;;
+            *) echo "Unknown area code: $entry_area"; exit 1 ;;
         esac
 
         if [ "$entry_name" = "$name" ]; then
@@ -64,12 +54,3 @@ sort "$tempfile" > "$PHONEBOOK"
 rm "$tempfile"
 
 echo "Added/Updated $name with number $number."
-
-
-
-
-
-
-
-
-
