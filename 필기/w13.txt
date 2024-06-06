@@ -48,12 +48,12 @@ $?
  echo 빈값
  fi
 
-- [, ]로 감싼다. "test" 프로그램 돌리는 표현식
+- [ ]로 감싼다. "test" 프로그램 돌리는 표현식
 - 앞뒤로 공백 넣기
 
 ## Q. 표현식으로 바꾸고 종료상태 확인하는 코드 보내
 name="KANE"
-if [ -z $name ]  # if [ -z "$name"] 따옴표로 감싸는게 좋음(K K 오)
+if [ -z $name ]  # if [ -z "$name"] 따옴표로 감싸는게 좋음(K K 오류)
 then
 echo null
 fi
@@ -72,11 +72,11 @@ num1, num2
 
 ## Q. 스크립트: count
 전체 인수가 0이 아닐 때, "프로그램을 실행합니다."라는 문구 출력하는 조건문 작성
-if [ $# -ne 0 ]; then  // $# 변수는 스크립트에 전달된 인수의 개수 나타
+if [ $# -ne 0 ]; then  // $# 변수는 스크립트에 전달된 인수의 개수 나타낸다
     echo "프로그램을 실행합니다."
 else
     echo "인수가 필요합니다."
-fi
+fi 
 
 # 종료 프로그램
 exit n
@@ -84,7 +84,7 @@ exit n
 - exit 프로그램을 사용하지 않으면 마지막 프로그램의 종료 상태가 반환된다
 
  count=4
- if [ $count - gt 0 ] && [ $count - lt 10]
+ if [ $count -gt 0 ] && [ $count -lt 10]
  then
   echo 0~10 사이 # 종료상태
   exit 0
