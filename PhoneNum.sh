@@ -20,14 +20,14 @@ if ! [[ "$number" =~ ^[0-9-]+$ ]]; then
 fi
 
 # 지역번호 구현
-case "${number:0:2}" in
+area_code=$(echo "$number" | cut -c1-3)
+case $area_code in
     "02") area="서울" ;;
     "051") area="부산" ;;
     "053") area="대구" ;;
     "032") area="인천" ;;
     "062") area="광주" ;;
-    "055") area="경남" ;;
-    *) echo "찾을 수 없는 지역번호입니다." ; exit 1 ;;
+    *) echo "Unknown area code." ; exit 1 ;;
 esac
 
 # 전화번호부 검색 및 수정
