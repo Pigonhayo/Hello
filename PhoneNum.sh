@@ -45,6 +45,7 @@ if [ -f "$PHONEBOOK" ]; then
                 echo "$name의 전화번호를 업데이트합니다."
                 sed -i "/^$name/d" "$PHONEBOOK" # $name과 일치하는 줄을 $PHONEBOOK 파일에서 삭제
                 echo "$name $number $area" >> "$PHONEBOOK"
+                sort -o "$PHONEBOOK" "$PHONEBOOK"  # 파일을 가나다순으로 정렬
                 exit 0
             fi
         fi
