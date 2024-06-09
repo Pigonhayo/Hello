@@ -45,7 +45,7 @@ if [ -f "$PHONEBOOK" ]; then
                 echo "$name의 전화번호를 업데이트합니다."
                 sed -i "/^$name/d" "$PHONEBOOK" # $name과 일치하는 줄을 $PHONEBOOK 파일에서 삭제
                 echo "$name $number $area" >> "$PHONEBOOK"
-                sort -o "$PHONEBOOK" "$PHONEBOOK"  # 파일을 가나다순으로 정렬
+                sort -o "$PHONEBOOK" "$PHONEBOOK"  # 파일을 번호순으로 정렬
                 exit 0
             fi
         fi
@@ -55,7 +55,7 @@ fi
 # 새로운 항목 추가
 echo "$name으로 새로운 항목을 추가합니다."
 echo "$name $number $area" >> "$PHONEBOOK" # >>는 출력 리다이렉션 연산자로, 기존 파일에 내용을 추가(append)할 때 사용
-sort -o "$PHONEBOOK" "$PHONEBOOK" # 파일을 가나다순으로 정렬
+sort -o "$PHONEBOOK" "$PHONEBOOK" # 파일을 번호순으로 정렬
 exit 0
 
 
